@@ -26,4 +26,5 @@ require('./controllers/questions-controller')(app)
 require('./controllers/quiz-attempts-controller')(app)
 
 //app.listen(4000)
-app.listen()
+app.listen(process.env.PORT || 4000)
+//app.listen()
