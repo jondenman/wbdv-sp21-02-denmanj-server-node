@@ -1,8 +1,7 @@
 const express = require('express')
 const app = express()
-
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/whiteboard-02',
+mongoose.connect('mongodb+srv://denmanj:ONstq5tG9U9JJ3NS@cluster0.dow06.mongodb.net/whiteboard?retryWrites=true&w=majority',
     {useNewUrlParser: true, useUnifiedTopology: true})
 
 // configures CORS
