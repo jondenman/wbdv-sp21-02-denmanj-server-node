@@ -1,14 +1,10 @@
 const quizzes = require('./quizzes.json')
+const quizzesDao = require('../../daos/quizzes-dao')
 
+const quizzesModel = require("../../models/quizzes/quizzes-model")
 // TODO: Node.js assignment
-const findAllQuizzes = () => {
-    return quizzes
-}
-const findQuizById = (quizId) => {
-    return quizzes.find((quiz) => {
-        return quiz._id === quizId
-    })
-}
+const findAllQuizzes = () => quizzesDao.findAllQuizzes()
+const findQuizById = (quizId) => quizzesDao.findQuizById(quizId)
 
 // console.log(findAllQuizzes())
 // console.log(findQuizById('123'))
